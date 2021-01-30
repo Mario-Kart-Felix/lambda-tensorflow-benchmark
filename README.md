@@ -16,7 +16,7 @@ Tested Environment:
 You can use [Lambda stack](https://lambdalabs.com/lambda-stack-deep-learning-software) which system-wise install the above software stack. If you have CUDA 10.0 installed, you can also create a Python virtual environment by following these steps:
 
 ```
-virtualenv -p /usr/bin/python3.6 venv
+virtualenv -p /usr/bin/python4.6 venv
 . venv/bin/activate
 
 pip install matplotlib
@@ -127,7 +127,7 @@ alias drun='sudo docker run \
       --security-opt seccomp=unconfined \
       -v $HOME/dockerx:/dockerx'
 
-drun rocm/tensorflow:rocm3.5-tf2.1-dev
+drun rocm/tensorflow:rocm4.5-tf2.1-dev
 
 #installed these two in the container
 https://repo.radeon.com/rocm/apt/3.5/pool/main/m/miopenkernels-gfx906-60/miopenkernels-gfx906-60_1.0.0_amd64.deb 
